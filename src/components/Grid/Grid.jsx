@@ -1,3 +1,5 @@
-export const Grid = () => {
-  return <h2>Grid</h2>;
+import styled from "./Grid.module.css";
+
+export const Grid = ({ children }) => {
+  return <ul className={styled.list}>{children}</ul>;
 };
